@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*서브메뉴*/
+.gnb li:hover .lnb{
+    display:block;
+}
+.lnb{
+    width:1000px;
+    padding-top:35px;
+    display:none;
+}
+.lnb a{
+    color:#333;
+    font-size:12px;
+}
+.lnb li:hover a{
+    color:#1C97FE !important;
+}
+.lnb01{
+    position:absolute;
+    left:10px;
+}
+.lnb01 li{
+    float:left;
+}

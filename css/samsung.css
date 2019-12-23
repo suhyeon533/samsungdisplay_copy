@@ -1,0 +1,252 @@
+@charset "utf-8";
+/*기초세팅*/
+*{
+    font-family:"JejuGothic";
+}
+body,h1,h2,h3,h4,h5,h6,ul,p{
+    margin:0;
+    padding:0;
+}
+a{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    display:block;
+}
+ul{
+    list-style:none;
+}
+span{
+    display:block;
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.inner{
+    width:960px;
+    margin:0 auto;
+}
+
+/*헤더*/
+header{
+    width:100%;
+    border-top:5px solid #DFDEDF;
+    margin-bottom:30px;
+}
+.headerWrap{
+    padding:15px;
+    border-bottom:3px solid #F2F2F2;
+}
+header h1,header ul{
+    display:inline-block;
+    text-align:center;
+}
+header a{
+    color:#333;
+}
+.gnb li{
+    float:left;
+    width:100px;
+    text-align:center;
+    font-size:15px;
+}
+.lang li{
+    float:left;
+    width:50px;
+    font-size:10px;
+}
+.lang li:first-child a{
+    color:#1C97FE;
+}
+.headerWrap{
+    position:relative;
+}
+.gnb{
+    position:absolute;
+    right:50%;
+    margin-right:-250px;
+    top:50%;
+    margin-top:-9px;
+    
+}
+.lang{
+    position:absolute;
+    right:0;
+    top:50%;
+    margin-top:-7px;
+}
+
+/*메인슬라이더*/
+.mainSlider{
+    width:100%;
+    height:590px;
+    background:url(../image/1-1slider.jpg) no-repeat;
+    background-size:100%;
+}
+.slidebtn01 li{
+    float:left;
+    margin-right:5px;
+}
+.slidebtn02 img{
+    float:right;
+}
+.mainSlider{
+    position:relative;
+}
+.mainSlider .slidebtn01{
+    position:absolute;
+    bottom:20px;
+    left:500px;
+}
+.mainSlider .slidebtn02{
+    position:absolute;
+    bottom:0px;
+    right:480px;
+}
+
+/*컨텐츠1*/
+.con1BoxWrap{
+    background-color:#1C97FE;
+}
+.content01 li{
+    float:left;
+    width:240px
+}
+.content01 li h2{
+    font-size:20px;
+    font-weight:100;
+    margin-top:50px;
+    margin-bottom:10px;
+}
+.content01 li a{
+    font-size:10px;
+    color:aliceblue;
+}
+.content01 li span{
+    margin-top:10px;
+    margin-bottom:50px;
+}
+
+/*컨텐츠2*/
+.con2BoxWrap{
+    background:url(../image/3-0bg.png) no-repeat;
+}
+.content02 h2{
+    text-align:center;
+    padding:50px 0;
+}
+.content02 li{
+    float:left;
+    width:240px;
+    text-align:center;
+    padding-bottom:50px;
+}
+.content02 li p{
+    padding-top:15px;
+}
+.content02 li a{
+    color:#333;
+}
+.content02 li span{
+    display:inline;
+    font-size:12px;
+}
+.content02 .view{
+    width:120px;
+    padding:10px 0;
+    background:#263D94;
+    margin:30px auto;
+    border-radius:50px;
+}
+.content02 .view a{
+    color:aliceblue;
+    font-size:11px;
+}
+
+/*컨텐츠3*/
+.con3BoxWrap{
+    margin-bottom:50px;
+}
+.content03 h2{
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+.content03 li{
+    float:left;
+    width:300px;
+    margin-right:20px;
+    box-shadow:2px 2px 5px 0 rgba(0,0,0,0.3);
+}
+.content03 li:last-child{
+    margin-right:0px;
+}
+.content03 li div{
+    padding-left:10px;
+}
+.content03 li h3{
+    font-weight:500;
+    padding-top:20px;
+}
+.content03 li p{
+    padding-top:5px;
+    padding-bottom:15px;
+}
+.content03 li span{
+    padding-bottom:15px;
+}
+.content03 li p,.content03 li span{
+    font-size:11px;
+}
+.content03 li .link{
+    width:120px;
+    padding-left:0;
+    background:#1C97FE;
+    padding:10px 0;
+    margin-top:20px;
+    margin-bottom:40px;
+    text-align:center;
+    border-radius:30px;
+}
+.content03 li .link a{
+    color:aliceblue;
+    font-size:13px;
+}
+
+/*푸터*/
+#footer{
+    padding-top:20px;
+    padding-bottom:25px;
+    border-top:3px solid #F2F2F2;
+    border-bottom:5px solid #DFDEDF;
+}
+.footerWrap h3,.footerWrap div,.footerWrap h4{
+    display:inline-block;
+    vertical-align:middle;
+}
+.footerWrap h3{}
+.footerWrap div{
+    margin:0 40px;
+}
+.footerWrap h4{}
+.footerWrap .fMTop li{
+    float:left;
+}
+.footerWrap .fMTop a{
+    color:#aaa;
+    font-size:10px;
+}
+.footerWrap .fMTop a:after{
+    content:" l ";
+    display:inline;
+}
+.footerWrap .fMTop li:last-child a:after{
+    display:none;
+}
+.footerWrap .fMiddle p{
+    margin-top:10px;
+    color:#aaa;
+    font-size:10px;
+}
